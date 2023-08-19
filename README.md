@@ -9,9 +9,12 @@
 > Relatórios entregues em aula de Laboratório -
 
 [x] Aula 1 Revisão POO;
+
 [x] Aula 2 Revisão POO(continuação com CRUD);
 
-    * A ideia do código de catálogo de filmes é de adicionar e marcar os filmes assistidos, com suas informações básicas e notas após o término deles. Assumindo um CRUD básico, temos o backend rodando em JavaScript, com algumas funções básicas e interatividade com o usuário. Assim, é possível alterar a lista a qualquer instante em que o usuário necessitar.
+<img src = "https://www.ofuxico.com.br/wp-content/uploads/2021/10/painel-com-posteres-filmes-halloween-paramount.jpg" />
+
+A ideia do código de catálogo de filmes é de adicionar e marcar os filmes assistidos, com suas informações básicas e notas após o término deles. Assumindo um CRUD básico, temos o backend rodando em JavaScript, com algumas funções básicas e interatividade com o usuário. Assim, é possível alterar a lista a qualquer instante em que o usuário necessitar.
 
 ### Códigos:
 
