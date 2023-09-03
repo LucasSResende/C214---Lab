@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/LucasSResende/C214-Lab/issues"
   },
-  "homepage": "https://github.com/LucasSResende/C214-Lab#readme"
+  "homepage": "https://github.com/LucasSResende/C214-Lab#readme",
+  "dependencies": {
+    "dayjs": "^1.11.9"
+  }
 }

@@ -5,6 +5,15 @@
   let classificacao = '';
 
 
+  import dayjs from 'dayjs';
+  let dataHoraAtual = '';
+  const exibirDataHoraAtual = () => {
+    dataHoraAtual = dayjs().format('YYYY-MM-DD HH:mm:ss');
+  };
+
+
+
+
   const calcularIMC = () => {
     imc = (peso / (altura * altura)).toFixed(2);
 
@@ -104,6 +113,15 @@
     <div>
       <p>Seu IMC é: {imc}</p>
       <p>Classificação do peso: {classificacao}</p>
+      <h1>Data e Hora do cálculo</h1>
+      <button on:click={exibirDataHoraAtual}>Exibir</button>
     </div>
   {/if}
+  {#if dataHoraAtual}
+    <p>Data e hora atuais: {dataHoraAtual}</p>
+  {/if}
+
+
+
+
 </main>

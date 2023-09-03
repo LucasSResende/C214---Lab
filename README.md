@@ -63,6 +63,47 @@ e entrar no link página indicada pela compilação do código, que pode ser vis
 
 > [14:43:34] 200 ─ 1.67ms ─ /build/bundle.js
 
+<h2>[x] Aula 4 Gerenciamento de Dependências;</h2>
+Continuando o aplicativo de cálculo de IMC, foi implementada uma função onde mostra a data e hora do cálculo realizado. Para isso foi necessário instalar uma nova dependência, a "dayjs", que faz manipulação de data e hora. Foi aumentado no código um botão para visualização da data e hora e mostrada no display final.
+
+Instalação da dependência:
+
+```
+npm install dayjs
+```
+
+Depois de instalada, deve ser dado o comando:
+
+```
+npm install
+```
+
+novamente, e em seguida o comando:
+
+```
+npm run dev
+```
+
+para que as atualizações do código estejam prontas para funcionar.
+
+Lembrando que ao abirr o arquivo package-lock.json, deve-se encontrar a nova dependência referente ao módulo dayjs, conforme mostrado abaixo:
+
+> "packages": {
+
+> "": {
+
+> "name": "svelte-app",
+
+> "version": "1.0.0",
+
+> "dependencies": {
+
+> "dayjs": "^1.11.9",
+
+> "sirv-cli": "^2.0.0"
+
+> },
+
 ### Códigos:
 
 > Todos os códigos estão disponíveis por tópicos de aulas.
