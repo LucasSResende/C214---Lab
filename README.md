@@ -104,6 +104,71 @@ Lembrando que ao abirr o arquivo package-lock.json, deve-se encontrar a nova dep
 
 > },
 
+<h2>[x] Aula 5 Testes unitários;</h2>
+Continuando o aplicativo de cálculo de IMC, foram implementadas as funções:
+
+> classificarIMC(imc): Classifica o IMC em categorias como "Peso normal", "Sobrepeso" e assim por diante.
+
+> avaliarPaciente(peso, altura): Usa as duas funções acima para calcular o IMC e classificar o paciente.
+
+Primeiramente, verifique a versão do node utilizado e altere com nvm caso necessário:
+
+Para verificar versão do node:
+
+```
+node -v
+```
+
+caso não tenha a ferramenta de gerenciamento de versão do node, instale-o com o comando:
+
+```
+nvm install
+```
+
+e altere a versão caso necessário com o comando:
+
+```
+nvm use <numero_da_versão_requerido>
+```
+
+Instalação das ferramentas de teste:
+
+```
+npm install mocha chai
+```
+
+Depois de instaladas e com seus testes devidamente criados, deve ser dado o comando:
+
+```
+npm test
+```
+
+A saída dos testes deverão aparecer da forma abaixo. Caso algum deles ocorra uma falha, revise o código e analise a lógica utilizada para os testes, garantindo assim, que eles estejam condizentes com os parâmetros utilizados e resultados esperados:
+
+```
+> aula5@1.0.0 test
+> mocha
+
+
+
+  Testes para calcularIMC
+    ✔ Deve calcular o IMC corretamente para valores válidos
+    ✔ Deve retornar "NaN" se a altura for igual a zero
+
+  Testes para classificarIMC
+    ✔ Deve classificar corretamente como "Peso normal"
+    ✔ Deve classificar corretamente como "Sobrepeso"
+    ✔ Deve classificar corretamente como "Obesidade grau 2"
+
+  Testes para avaliarPaciente
+    ✔ Deve avaliar corretamente um paciente com peso e altura válidos
+    ✔ Deve avaliar corretamente um paciente com altura igual a zero
+
+
+  7 passing (8ms)
+
+```
+
 ### Códigos:
 
 > Todos os códigos estão disponíveis por tópicos de aulas.
