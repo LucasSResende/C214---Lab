@@ -21,14 +21,14 @@ jobs:
         cache: maven
     - name: Testes com maven
       run: |
-        cd Aula-GitHub-Actions
+        cd Aula08 
         mvn clean test site
 
     - name: Upload de artefatos
       uses: actions/upload-artifact@v3
       with:
         name: relatorio-testes
-        path: Aula-GitHub-Actions/target/site/
+        path: Aula08/target/site/
 
 
   empacotar:
@@ -46,11 +46,11 @@ jobs:
         cache: maven
     - name: Build com maven
       run: |
-        cd Aula-GitHub-Actions
+        cd Aula08
         mvn clean install
 
     - name: Upload de artefatos
       uses: actions/upload-artifact@v3
       with:
         name: jar
-        path: Aula-GitHub-Actions/target/*.jar
+        path: Aula08/target/*.jar
