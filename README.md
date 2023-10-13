@@ -169,6 +169,61 @@ A saída dos testes deverão aparecer da forma abaixo. Caso algum deles ocorra u
 
 ```
 
+<h2>[x] Aula 8 Git Actions e pipelines;</h2>
+
+Utilizando um código de aula similar:
+
+### Tecnologias
+
+- Linguagem de Programação: Python
+- IDE: [Visual Studio Code](https://code.visualstudio.com)
+
+### Gerenciamento de Dependências
+
+1. Instale pip como o gerenciador de dependências usando o comando no terminal `python -m pip install -U pip`
+2. Para incluir todas as dependências do projeto use o comando `pip freeze > requirements.txt`
+3. Instale as dependências usando o comando no terminal `pip install -r requirements.txt`
+
+### Execução
+
+Para executar os projetos, siga as instruções abaixo:
+
+1. Certifique-se de ter o [Python](https://www.python.org) instalado em sua máquina.
+2. Faça o download do código do GitHub ou clone o repositório: `https://github.com/ThiagoMiguel7/C214_CI_Seminario.git`. Certifique-se de ter o [Git](https://git-scm.com) instalado.
+3. Abra o terminal ou prompt de comando e navegue até o diretório raiz do projeto.
+4. Execute o arquivo [main.py] para rodar a aplicação.
+
+### Testes unitários
+
+O sistema implementa testes unitários para a classe CarrinhoCompras usando a biblioteca unittest. O objetivo desses testes é verificar se a classe CarrinhoCompras está funcionando corretamente.
+
+#### Requisitos:
+
+Certifique-se que as seguintes bibliotecas estão instaladas:
+
+- unittest
+- HtmlTestRunner
+
+Na IDE, execute o arquivo [`test_CarrinhoCompras.py`] ou os testes individualmente para verificar a funcionalidade correta do sistema. Outra possibilidade é executar o seguinte comando no terminal: `python -m unittest -v` ou `python test_CarrinhoCompras.py`.
+
+1. **test_calcular_total_Pedro_Equal:** verifica se o cálculo do total para o carrinho de compras do cliente Pedro está correto e é igual ao valor esperado.
+2. **test_calcular_total_Lucas_Equal:** verifica se o cálculo do total para o carrinho de compras do cliente Thiago está correto e é igual ao valor esperado.
+3. **test_calcular_total_Wesley_Equal:** verifica se o cálculo do total para o carrinho de compras do cliente Wesley está correto e é igual ao valor esperado.
+4. **test_calcular_total_Pedro_NotEqual:** verifica se o cálculo do total para o carrinho de compras do cliente Pedro não é igual ao valor inesperado.
+5. **test_calcular_total_Lucas_NotEqual:** verifica se o cálculo do total para o carrinho de compras do cliente Thiago não é igual ao valor inesperado.
+6. **test_calcular_total_Wesley_NotEqual:** verifica se o cálculo do total para o carrinho de compras do cliente Wesley não é igual ao valor inesperado.
+7. **test_adicionar_produto_Pedro:** verifica se um produto é adicionado corretamente ao carrinho de compras do cliente Pedro.
+8. **test_adicionar_produto_Lucas:** verifica se um produto é adicionado corretamente ao carrinho de compras do cliente Thiago.
+9. **test_adicionar_produto_Wesley:** verifica se um produto é adicionado corretamente ao carrinho de compras do cliente Wesley.
+10. **test_carrinho_Nvazio_Pedro:** verifica se o carrinho de compras do cliente Pedro não está vazio.
+11. **test_carrinho_Nvazio_Lucas:** verifica se o carrinho de compras do cliente Thiago não está vazio.
+12. **test_carrinho_Nvazio_Wesley:** verifica se o carrinho de compras do cliente Wesley não está vazio.
+
+#### Relatórios de Teste
+
+Os resultados dos testes serão exibidos no console e também serão gerados relatórios HTML, arquivo test_report, na pasta artifacts presente no [GitHub Actions]. Esses relatórios fornecem uma visão mais detalhada dos resultados dos testes, incluindo informações sobre testes passados e falhados.
+
+
 ### Códigos:
 
 > Todos os códigos estão disponíveis por tópicos de aulas.
